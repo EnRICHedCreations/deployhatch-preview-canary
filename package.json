@@ -1,0 +1,7 @@
+﻿{
+  "name": "deployhatch-preview-canary",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Deploy Hatch-owned zero-dependency preview lifecycle certification workload",
+  "scripts": { "start": "node index.js" }
+}
