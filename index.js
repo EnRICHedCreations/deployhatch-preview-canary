@@ -13,6 +13,9 @@ console.log(`TCP_LISTEN_HOST=${host}`);
 console.log(`TCP_LISTEN_PORT=${port}`);
 
 const server = net.createServer((socket) => {
+  socket.on("error", (error) => {
+    console.log(`TCP_CLIENT_ERROR=${error.code || error.message}`);
+  });
   socket.end(payload);
 });
 
